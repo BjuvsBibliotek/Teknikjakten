@@ -21,7 +21,7 @@ Du behöver sedan ändra ett saker på varje sida.
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-
+    
   <!--
   # Genom att ändra denna informationen nedan kan du ge jakten ett eget namn
   # EX: <title>Ett helt eget namn</title>
@@ -91,7 +91,7 @@ Du behöver sedan ändra ett saker på varje sida.
             <br>
             <br>
             <!--Uppgiftens nummer-->
-            <h3>Testfråga där alla svar godkänns</h3>
+            <h3>Testfråga med alternativ</h3>
             <!--Vilket är uppdraget?-->
             <br>
             <br>
@@ -121,7 +121,7 @@ Du behöver sedan ändra ett saker på varje sida.
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">Svar</h2>
-            <h3 class="section-subheading text-muted">Svara på frågan för att ta dig vidare</h3>
+            <h3 class="section-subheading text-muted" id="moveOn">Svara på frågan för att ta dig vidare</h3>
           </div>
         </div>
         <div class="row">
@@ -137,22 +137,26 @@ Du behöver sedan ändra ett saker på varje sida.
       Vi kan fortsätta på detta viset och lägga till nya sidor tills dess att vi skapat
       så många uppdrag vi vill.
       -->
-            <form id="contactForm" name="sentMessage" novalidate="novalidate" 
-            action="./5.html" 
+            <form id="radioForm" novalidate="novalidate" 
+            action="./klar.html" 
             onsubmit="return validateForm()" autocomplete="off">
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="form-group">
-                    <input class="form-control" id="answer" type="text" placeholder="Skriv ditt svar här" required="required" data-validation-required-message="Rutan får inte vara tom">
-                    <p class="help-block text-danger"></p>
-                  </div>
-                  
-                <div class="col-lg-12 text-center">
-                  <div id="success"></div>
-                  <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Skicka ditt svar</button>
-                </div>
+              <div class="col-lg-12 text-center">
+                <input type="radio" id="one" name="alternativ" value="alt1" checked="checked">
+                <label for="one" style="color:white; font-size:16px;">1. alternativ 1</label><br/>
+
+                <input type="radio" id="two" name="alternativ" value="alt2">
+                <label for="two" style="color:white; font-size:16px;">2. alternativ 2</label><br/>
+
+                <input type="radio" id="three" name="alternativ" value="alt3">
+                <label for="three" style="color:white; font-size:16px;">3. alternativ 3</label><br/>
+                <br/><br/>
               </div>
-            
+              
+              <div class="col-lg-12 text-center">
+                <div id="success"></div>
+                <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Skicka ditt svar</button>
+              </div>
+
           </div></form>
         </div>
       </div>
@@ -186,7 +190,7 @@ Du behöver sedan ändra ett saker på varje sida.
     function validateForm() {
 
       //Det använder skriver i rutan hämtas in och sparas i en variabel som heter answer.
-      var answer = document.forms["contactForm"]["answer"].value.toLowerCase();
+      //var answer = document.forms.radioForm.alternativ.value();
       
       /*Genom att ändra det som står mellan dessa tecken "" kan du välja vad som är rätt svar 
       Viktigt! Skriv svaret med små bokstäver.
@@ -211,11 +215,10 @@ Du behöver sedan ändra ett saker på varje sida.
 
       */
 
-      if (answer.length > 0) {
+      if (document.forms["radioForm"]["alternativ"].value == "alt3") {
           return true;
       }else{
-        document.getElementById("answer").value ="";
-        document.getElementById("answer").setAttribute("placeholder","Hmm, det här stämmer inte. Försök igen!");
+        document.getElementById("moveOn").innerHTML = "<h3 style=color:red>Fel, försök igen</h3>";
         return false;
       }
     }
