@@ -1,0 +1,273 @@
+<!--
+SKAPA EN EGEN MALLSIDA FÖR UPPDRAG
+==========================================================
+Målet med den sida du arbetar med just nu är att skapa en
+mall som du sedan kan kopiera till så många uppdrag du behöver.
+Du behöver sedan ändra ett saker på varje sida.
+-->
+
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+  <!--
+  Genom att ändra denna informationen nedan kan du ge jakten ett eget namn
+  EX: <title>Ett helt eget namn</title>
+  Informationen visas inte någonstans på webbsidan utan ändrar det namn som 
+  webbsidans flik/tabb har då du du surfar till sidan.
+  -->
+    <title>Teknikjakten Bjuvs bibliotek</title>
+
+  <!--Filer som berättar hur sidan skall se ut laddas in. Här behöver vi inte ändra något-->
+  
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link href="css/agency.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+
+
+  <body id="page-top">
+  <!-- Denna del av koden berättar vad menyn skall innehålla. Du behöver inte ändra något -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <!--Länken i övre vänster hörn. Leder till startsidan (som alltid ska heta index i alla kodprojekt
+        du skapar). Den vita texten kan ändras för att passa Ekeby och Billesholm istället-->
+        <a class="navbar-brand js-scroll-trigger" href="./index.html">Teknikjakten på Bjuvs bibliotek</a>
+
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="http://www.itbib.se/teknikjakten/om.html">Så använder du
+             teknikjakten</a>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="http://www.itbib.se/teknikjakten/om.html">Om teknikjakten</a>
+            </li> 
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--SLUT PÅ DELEN SOM BESKRIVER MENYN LÄNGST UPP-->
+
+    <!-- DELEN SOM BESKRIVER FÖRSTA UPPDRAGET STARTAR -->
+    <section id="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <!--Här görs majoriteten av alla ändringar.
+              
+            Taggarna h1-h6 (h står för header) används för att markera rubriker
+            (lägre siffra == större rubrik). Du behöver ha en starttagg och 
+            en sluttagg för att visa var rubriken börjar och slutar. Ex:
+            
+            <h1>Din text här!</h1>
+            
+            Varje rubriknivå har default-inställningar men om det står t. ex.
+            <h2 class="nånting"> betyder det att vi har gjort egna inställningar.
+            Detta kan vara tillägg eller ändringar. Vi kan lägga till att det ska
+            finnas en ruta runt texten eller ändra textens färg från default svart
+            till ex. rött. Alla attribut vi inte uttryckligen ändrar på behåller
+            sina default-inställningar. Koden till dessa ändringar finns i någon av
+            filerna som slutar på .css om du är nyfiken men det är inget som
+            behöver ändras.
+          
+            Taggen p (paragraph) markerar brödtext. Fungerar i övrigt på samma sätt
+            som h-taggen. <p>Din text</p>
+
+            Blanktecken betyder oftast ingenting i koden så för att lägga till lite
+            luft mellan raderna kan du använda <br/> (break, start- och sluttagg
+            kombineras i samma. <br> funkar oftast också men lite snyggare med <br/>)
+            Tänk effekten ungefär som när du trycker Enter i Word.
+            -->
+
+            <!--Sidans största rubrik-->
+            <h2 class="section-heading text-uppercase">En hemlig kod</h2>
+            <br/>
+            <br/>
+
+            <!--Respons på förra frågan-->
+            <p>
+              Inte illa, du skulle kunna bli detektiv. <br/>
+            </p>
+
+            <!--Frågan-->
+            <h3 class="question">Vilka bokstäver står längst ner på knubben för "Vilda Djur"?</h3>
+            <br/>
+            <br/>
+
+            <!--Förklarande text till frågan-->
+            <p>
+            Detta kallas för en knubb och den används för att visa information om böckerna som står till höger om den.
+            Det kan vara att författarens efternamn börjar på en viss bokstav, eller att böckerna är skrivna på ett
+            annat språk, eller att de handlar om ett visst ämne - som knubben på bilden. Gå till barnfaktarummet och
+            leta upp knubben för Vilda Djur.
+
+            <br/>
+            <br/>
+
+            <!--Här ändrar du om du vill ha en bild, annars kan du radera koden eller kommentera bort den.
+            
+            src vill ha filsökvägen, som bör bli "./img/bildensNamn.filformat" så länge alla bilder som
+            ska användas läggs i img-mappen.
+            
+            alt vill ha en textbeskrivning av bilden, som kan visas om bilden av någon anledning inte kan 
+            laddas in, eller som kan läsas upp av screen reader-program för de som ser dåligt.
+            
+            width och height behöver antagligen inte ändras. Det ska finnas kod på andra ställen som anpassar
+            text och bild till skärmstorleken på den enhet som används så att det ser okej ut oavsett om du
+            använder dator, surfplatta eller mobil.-->
+            <img src="./img/knubbDjur.jpg"
+            alt="Bild på knubb som brukar stå mellan böckerna i en hylla för att markera en ny bokstav eller ett nytt ämne"
+            width="60%" height="60%"/>
+            
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+ 
+<!-- DELEN DÄR MAN MATAR IN SITT SVAR STARTAR -->
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Svar</h2>
+            <!--Denna texten kan ändras vid fel svar, detta görs i funktionen validateForm() längst ner-->
+            <h3 class="section-subheading text-muted" id="moveOn">Svara på frågan för att ta dig vidare</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+
+      <!--VILKEN SIDA SKALL LADDAS OM MAN SKRIVIT IN RÄTT SVAR
+      Du behöver här berätta vilken sida som skall laddas om man löser uppdraget.
+      Just nu är det sidan som heter klar.html som skall laddas, som är sista sidan i vår jakt.
+      Om vi istället vill fortsätta till nästa fråga skriver man in filsökvägen på den sidan,
+      exempelvis "./2knubbDjur.html". Den första punkten här är egentligen en förkortning av
+      typ C:/Användare/Lånedisk/Dokument/github/teknikjakten etc. Det betyder ungefär "utgå från
+      den punkt jag befinner mig just nu", i det här fallet den mapp där filen "mallAlternativ.html"
+      finns och leta i samma mapp efter en fil vid namn "2knubbDjur.html". En filsökväg till en bild
+      skulle kunna vara "./img/bild.jpg" som då betyder att i mappen jag är just nu finns en mapp
+      som heter "img" och i den mappen finns en bildfil som heter "bild.jpg".
+
+      Vi kan fortsätta på detta viset och lägga till nya sidor tills dess att vi skapat
+      så många uppdrag vi vill.
+      -->
+
+      <!--Här under där det står
+      action="./klar.html"
+      ändrar man vilken sida som ska laddas när frågan besvarats rätt. Själva kontrollen om svaret är
+      rätt görs i funktionen validateForm(). Koden till den ligger längst ner i denna filen.-->
+            <form id="radioForm" novalidate="novalidate" 
+            action="./klar.html" 
+            onsubmit="return validateForm()" autocomplete="off">
+
+            <!--Här bygger vi själva flervalsfrågan. För att lägga till fler val kopiera de
+              två rader som börjar med input och label och klistra in så många som behövs.
+
+              - Ge "id" ett unikt namn och skriv in samma namn
+              på motsvarande "for".
+              - Ändra namn på value (förslagsvis "alt4" osv). Behöver inte vara unikt men det
+              blir lite lättare att hålla reda på vilket alternativ du jobbar med om inte alla
+              heter typ "fel" och "rätt". Namnet i value är det som kontrolleras mot rätt svar
+              sedan.
+              - Ändra den vita texten före </label>. Detta är den text som visas bredvid varje
+              alternativruta.
+              - name behöver INTE ändras om du inte av någon anledning vill ha mer än en
+              flervalsfråga på samma sida. Samma namn i name betyder att alternativen tillhör
+              samma fråga.
+              - Dubbelkolla att checked="checked" bara står med på ett alternativ. Det betyder
+              att alternativet är förikryssat för att undvika problem med att någon svarar
+              utan att kryssa i något alls. Formulärtypen "radio" tillåter bara ett rätt svar,
+              inte flera, så det kan ge spännande resultat om vi förikryssar för många alternativ.
+               -->
+              
+              <div class="col-lg-12 text-center">
+                <input type="radio" id="one" name="alternativ" value="alt1" checked="checked">
+                <label for="one" style="color:white; font-size:16px;">1. alternativ 1</label><br/>
+
+                <input type="radio" id="two" name="alternativ" value="alt2">
+                <label for="two" style="color:white; font-size:16px;">2. alternativ 2</label><br/>
+
+                <input type="radio" id="three" name="alternativ" value="alt3">
+                <label for="three" style="color:white; font-size:16px;">3. alternativ 3</label><br/>
+                <br/><br/>
+              </div>
+              
+              <div class="col-lg-12 text-center">
+                <div id="success"></div>
+                <!--Vill du ha en annan text på knappen som skickar in svaret, ändra den vita texten.-->
+                <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Skicka ditt svar</button>
+              </div>
+
+          </div></form>
+        </div>
+      </div>
+    </div></section>
+
+    <!-- DENNA DEL BESKRIVER INFORMATIONEN SOM VISAS LÄNGST NER PÅ SIDAN -->
+    <!--Inget behöver ändras. Länken i sidfoten leder till Bjuvs startsida på bibliotekfh.se-->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <span class="copyright">
+              <a href="http://www.bibliotekfh.se/bjuv?refId=xAFq2G&culture=sv" style="font-weight: bold">
+                  Folkbiblioteken i Bjuvs kommun
+              </a>
+            </span>
+          </div>
+          
+        </div>
+      </div>
+    </footer>
+
+    <!-- Filer som denna mall använder läses in, inget behöver ändras -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="js/agency.min.js"></script>
+    <script src="js/agency.min.js"></script>
+
+    <!--I DENNA DEL BERÄTTAR DU VAD SOM ÄR RÄTT SVAR-->
+    <script>
+    function validateForm() {
+
+      /*Här känner vi av vilket alternativ som är ikryssat och kontrollerar
+      om det är rätt. Villkor som if-satser körs bara om påståendet är sant.
+      I denna if-satsen påstår vi (spelarens svar är lika med "alt3"). Om det
+      är sant körs koden som finns mellan {}-parenteserna närmast efter 
+      påståendet. Vi har också en else-sats som gör något annat när påståendet
+      är falskt. I det här fallet ändrar vi texten och färgen i en rubrik med
+      id "moveOn" så att spelaren vet att de svarat fel. Den orangea texten 
+      "Fel, försök igen" kan ändras om du vill.
+      Nu står det return true; och return false; i if/else-satserna - det är
+      samma princip men är inte relaterat till det if-villkor vi just utvärderat,
+      utan är svar till ett annat påstående. Låt dem vara.*/
+
+      if (document.forms["radioForm"]["alternativ"].value == "alt3") {
+          return true;
+      }else{
+        document.getElementById("moveOn").innerHTML = "<h3 style=color:red>Fel, försök igen</h3>";
+        return false;
+      }
+    }
+  </script>
+</body>
+</html>
