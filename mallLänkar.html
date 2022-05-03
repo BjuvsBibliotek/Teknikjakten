@@ -1,0 +1,304 @@
+<!--
+SKAPA EN EGEN MALLSIDA FÖR UPPDRAG
+==========================================================
+Nu blir det lite repetition. Den sida hu hintills arbetet med 
+introducerade jakten och hade därför lite speciellt innehåll.
+
+Målet med den sida du arbetar med just nu är att skapa en
+mall som du sedan kan kopiera till så många uppdrag du behöver.
+Du behöver sedan ändra ett saker på varje sida.
+
+1. Beskrivningen av uppdraget.
+2. Uppgiftens nummer
+3. Vad det rätta svaret är
+4. Vilken sida som skall laddas om man svarar rätt.
+-->
+
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+  <!--
+  Genom att ändra denna informationen nedan kan du ge jakten ett eget namn
+  EX: <title>Ett helt eget namn</title>
+  Informationen visas inte någonstans på webbsidan utan ändrar det namn som 
+  webbsidans flik/tabb har då du du surfar till sidan.
+  -->
+    <title>Teknikjakten Bjuvs bibliotek</title>
+
+  <!--Filer som berättar hur sidan skall se ut laddas in. Här behöver vi inte ändra något-->
+  
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link href="css/agency.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+
+
+  <body id="page-top">
+  <!-- Denna del av koden berättar vad menyn skall innehålla -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <!--Länken i övre vänster hörn. Leder till startsidan (som alltid ska heta index i alla kodprojekt
+        du skapar). Den vita texten kan ändras för att passa Ekeby och Billesholm istället-->
+        <a class="navbar-brand js-scroll-trigger" href="./index.html">Teknikjakten på Bjuvs bibliotek</a>
+
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="http://www.itbib.se/teknikjakten/om.html">Så använder du
+             teknikjakten</a>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="http://www.itbib.se/teknikjakten/om.html">Om teknikjakten</a>
+            </li> 
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--SLUT PÅ DELEN SOM BESKRIVER MENYN LÄNGST UPP-->
+
+    <!-- DELEN SOM BESKRIVER FÖRSTA UPPDRAGET STARTAR -->
+    <section id="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <!--Här görs majoriteten av alla ändringar.-->
+
+            <!--Sidans största rubrik-->
+            <h2 class="section-heading text-uppercase">Rosor är röda, violer är blå...</h2>
+            <br/>
+            <br/>
+
+            <!--Respons på förra frågan-->
+            <p>
+              Precis! Böckerna är sorterade i bokstavsordning efter författarens efternamn. <br/>
+            </p>
+
+            <!--Frågan-->
+            <h3 class="question">Vilken färg har pricken på alla utländska barnböcker?</h3>
+            <br/>
+            <br/>
+
+            <!--Förklarande text till frågan-->
+            <p>
+              Nu kanske du kan läsa på ett annat språk än svenska. Alla sådana böcker är
+              märkta med en prick i samma färg. Vilken färg har pricken?
+
+            <br/>
+
+            <!--LÄNKAR-->
+
+            <!--
+              - <a></a>, definierar en länk
+              - href, talar om vart länken pekar
+              - target, default är _self som innebär att länken öppnas i samma fönster som länken är i.
+              Du kan oftast backa tillbaka in i teknikjakten men för oss är _blank som öppnar en ny
+              tom flik antagligen mer praktiskt.
+              - title, lägger till en tooltip, alltså en förklarande text som dyker upp när man för
+              musen över länken.
+            -->
+
+            <!--Textlänk
+              - Bibliotekets hemsida, detta är den text som visas på sidan och blir själva länken. Default
+              färger är blå för oanvänd länk, lila för använd och röd medans du klickar på den. I
+              agency.css ändrar vi färgschemat till gult för alla varianter och gult + understruket för
+              när du håller musen över länken (hover).
+            -->
+            <a href="https://www.bibliotekfh.se/" target="_blank" title="Den här länken öppnar bibliotekets hemsida i en ny flik">
+              Bibliotekets hemsida
+            </a>
+            <br/>
+            <br/>
+
+            <!--Textlänk inom vår egen webbsida
+            - Byt ut URL:en (webbsideadressen) mot en intern filsökväg. Samma princip som när vi byter
+            sida efter att användaren svarat rätt på frågan eller när vi berättar var bilden vi vill
+            ha med ligger någonstans.
+            - Notering, valde att demonstrera _self i det här exemplet som öppnar nästa sida i samma
+            fönster som vi är i. När vi navigerar inom vår egen hemsida är det kanske mindre troligt
+            att vi vill öppna nya flikar hela tiden.-->
+
+            <a href="./index.html" target="_self">
+              Tillbaka till startsidan
+            </a>
+            <br/>
+            <br/>
+
+            <!--Länk till bokmärke-->
+            <!--Länkar behöver inte ta dig till en annan sida, de kan också användas till att navigera
+            inom långa sidor genom så kallade bokmärken. På flera ställen i koden kan du hitta "id="
+            följt av ett unikt namn. Dessa id kan vi använda som bokmärken genom att skriva #idNamnet
+            i href där vi annars skulle skrivit en URL eller en filsökväg. I exemplet har jag använd
+            "moveOn" som finns i en rubrik nere vid svarsdelen (samma rubrik som ändras när användaren
+            svarar fel). Bokmärkeslänkar förflyttar den tagg som id:t tillhör allra högst upp på sidan,
+            om det är möjligt. Våra sidor är inte så långa (man kan inte scrolla så långt) och det finns
+            inte så mycket innehåll under moveOn-rubriken att vi kan flytta den längst upp utan att
+            skapa tomma ytor för att fylla ut resten av skärmen, så vi får nöja oss med att flytta den
+            så högt det går.-->
+            <a href="#moveOn" target="_self">
+              Till svarsdelen
+            </a>
+            <br/>
+            <br/>
+
+            <!--Länk till bokmärke på annan sida-->
+            <!--Det går också att länka till bokmärken på andra sidor genom att lägga till #idNamn
+            direkt efter filsökvägen. Sidor som Wikipedia använder också bokmärken för sina längre
+            artiklar så om du använder deras innehållsförteckning för att navigera kan du se vad
+            deras bokmärken heter uppe i URL-fältet. (De syns inte om du bara scrollar ner till
+            den del du är intresserad av.)-->
+
+            <a href="./index.html#moveOn" target="_self">
+              Svarsdelen på startsidan
+            </a>
+            <br/>
+            <br/>
+
+            <a href="https://sv.wikipedia.org/wiki/Demokrati#Historia" target="_blank">
+              Wikipedia om demokrati
+            </a>
+            <br/>
+            <br/>
+            
+            <!--Bildlänk, fungerar precis likadant som textlänken men istället för att skriva något
+            infogar du en bild. Koden för att lägga in en bild är likadan som om du bara lägger till
+            den i en fråga, den ska bara ligga mellan <a>-taggarna för att bli en länk.-->
+              <a href="https://www.bibliotekfh.se/" target="_blank">
+                <img src="./img/favicon.png" alt="Familjen Helsingborgs logga" width="20%" height="20%"/>
+              </a>
+              <br/>
+              <br/>
+
+            <!--Del av bild som länk-->
+            <img src="./img/header-bg.jpg" alt="Detektivens tillbehör" usemap="#detektiv">
+
+            <map name="detektiv">
+              <area shape="rect" coords="124, 160, 171, 251" alt="telefon" href="mallAlternativ.html">
+            </map>
+
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+ 
+<!-- DELEN DÄR MAN MATAR IN SITT SVAR STARTAR -->
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Svar</h2>
+            <!--Här är rubriken som ändras om svaret är fel. Detta görs i funktionen validateForm()
+            Här är också id:t "moveOn" som vi använder till vår bokmärkeslänk-->
+            <h3 class="section-subheading text-muted" id="moveOn">Svara på frågan för att ta dig vidare</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+
+      <!--VILKEN SIDA SKALL LADDAS OM MAN SKRIVIT IN RÄTT SVAR
+        Du behöver här berätta vilken sida som skall laddas om man löser uppdraget.
+        Just nu är det sidan som heter klar.html som skall laddas, som är sista sidan i vår jakt.
+        Om vi istället vill fortsätta till nästa fråga skriver man in filsökvägen på den sidan,
+        exempelvis "./2knubbDjur.html". Den första punkten här är egentligen en förkortning av
+        typ C:/Användare/Lånedisk/Dokument/github/teknikjakten etc. Det betyder ungefär "utgå från
+        den punkt jag befinner mig just nu", i det här fallet den mapp där filen "mallAlternativ.html"
+        finns och leta i samma mapp efter en fil vid namn "2knubbDjur.html". En filsökväg till en bild
+        skulle kunna vara "./img/bild.jpg" som då betyder att i mappen jag är just nu finns en mapp
+        som heter "img" och i den mappen finns en bildfil som heter "bild.jpg".
+
+        Vi kan fortsätta på detta viset och lägga till nya sidor tills dess att vi skapat
+        så många uppdrag vi vill.
+      -->
+
+      <!--Här under där det står
+      action="./klar.html"
+      ändrar man vilken sida som ska laddas när frågan besvarats rätt. Själva kontrollen om svaret är
+      rätt görs i funktionen validateForm(). Koden till den ligger längst ner i denna filen.-->
+            <form id="contactForm" name="sentMessage" novalidate="novalidate" 
+            action="./klar.html" 
+            onsubmit="return validateForm()" autocomplete="off">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <!--placeholder bestämmer hjälptexten som står i fritextrutan. Kan ändras om det behövs
+                    en extra hint hur du vill ha svaret. Klassiskt exempel är "ÅÅ-MM-DD"-->
+                    <input class="form-control" id="answer" type="text" placeholder="Skriv ditt svar här" required="required" data-validation-required-message="Rutan får inte vara tom">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  
+                <div class="col-lg-12 text-center">
+                  <div id="success"></div>
+                  <!--Vill du ha en annan text på knappen som skickar in svaret, ändra den vita texten.-->
+                  <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Skicka ditt svar</button>
+                </div>
+              </div>
+            
+          </div></form>
+        </div>
+      </div>
+    </div></section>
+
+    <!-- DENNA DEL BESKRIVER INFORMATIONEN SOM VISAS LÄNGST NER PÅ SIDAN -->
+    <!--Inget behöver ändras. Länken i sidfoten leder till Bjuvs startsida på bibliotekfh.se-->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <span class="copyright">
+              <a href="http://www.bibliotekfh.se/bjuv?refId=xAFq2G&culture=sv" style="font-weight: bold">
+                  Folkbiblioteken i Bjuvs kommun
+              </a>
+            </span>
+          </div>
+          
+        </div>
+      </div>
+    </footer>
+
+    <!-- Filer som denna mall använder läses in, inget behöver ändras -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="js/agency.min.js"></script>
+    <script src="js/agency.min.js"></script>
+
+    <!--I DENNA DEL BERÄTTAR DU VAD SOM ÄR RÄTT SVAR-->
+    <script>
+    function validateForm() {
+
+      /*Spelarens fritextsvar hämtas, görs om till enbart små bokstäver
+      och sparas i en variabel som heter answer.*/
+      var answer = document.forms["contactForm"]["answer"].value.toLowerCase();
+      
+      if (answer == "grön" || answer == "gröna" || answer == "grönt") {
+          return true;
+      }else{
+        /*Om svaret är fel kommer ett felmeddelande, textrutan nollställs 
+        och hjälptexten (placeholder) ändras till "Hmm, det här stämmer inte. Försök igen!"
+        i det här fallet. Den texten kan ändras vid behov.*/
+        document.getElementById("moveOn").innerHTML = "<h3 style=color:red>Fel, försök igen</h3>";
+        document.getElementById("answer").value ="";
+        document.getElementById("answer").setAttribute("placeholder","Hmm, det här stämmer inte. Försök igen!");
+        return false;
+      }
+    }
+  </script>
+</body>
+</html>
