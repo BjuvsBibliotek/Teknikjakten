@@ -28,7 +28,8 @@ Du behöver sedan ändra ett saker på varje sida.
   Informationen visas inte någonstans på webbsidan utan ändrar det namn som 
   webbsidans flik/tabb har då du du surfar till sidan.
   -->
-    <title>Teknikjakten Bjuvs bibliotek</title>
+    <title>Testjakt Bjuvs bibliotek</title>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png">
 
   <!--Filer som berättar hur sidan skall se ut laddas in. Här behöver vi inte ändra något-->
   
@@ -175,7 +176,8 @@ Du behöver sedan ändra ett saker på varje sida.
             <br/>
             <br/>
             
-            <!--Bildlänk, fungerar precis likadant som textlänken men istället för att skriva något
+            <!--Bildlänk-->
+            <!--fungerar precis likadant som textlänken men istället för att skriva något
             infogar du en bild. Koden för att lägga in en bild är likadan som om du bara lägger till
             den i en fråga, den ska bara ligga mellan <a>-taggarna för att bli en länk.-->
               <a href="https://www.bibliotekfh.se/" target="_blank">
@@ -185,10 +187,23 @@ Du behöver sedan ändra ett saker på varje sida.
               <br/>
 
             <!--Del av bild som länk-->
+            <!--OBS! Använd bara detta om du planerar att visa den färdiga produkten på en dator. Bilder
+            är kodade att skala ner på mindre skärmar och eftersom koordinaterna är absoluta så hänger
+            de områden vi vill använda som länkar tyvärr inte med när bilden blir mindre. För att ta reda
+            på vilka pixlar du vill ha som koordinater kan du öppna bilden i paint och föra musen över den
+            punkt på bilden du vill ha. Längst ner i vänster hörn står koordinaterna i formatet "x, y".
+            - För rektanglar behövs koordinater för två punkter, övre vänster hörn och undre höger hörn. Så
+            "x1, y1, x2, y2".
+            - För cirklar behövs mittpunkten och en radie (i pixlar). Så "x, y, radie"
+            - Det går även att göra polygoner (shape="poly"). Du får då lägga in så många koordinater du
+            behöver för att få ihop den form du vill ha. Tänk att du skapar en sån där målarbild med 
+            numrerade punkter där du ska dra streck från punkt 1 till punkt 2 till punkt 3 osv. -->
+
             <img src="./img/header-bg.jpg" width="475px" height="313px" alt="Detektivens tillbehör" usemap="#detektiv">
 
             <map name="detektiv">
-              <area shape="rect" coords="124, 160, 171, 251" alt="telefon" href="mallAlternativ.html" title="Här är jag">
+              <area shape="rect" coords="124, 160, 171, 251" alt="telefon" href="https://sv.wikipedia.org/wiki/Smartmobil" target="_blank">
+              <area shape="circle" coords="375, 200, 75" alt="hörlurar" href="./index.html" target="_self">
             </map>
 
             </p>
