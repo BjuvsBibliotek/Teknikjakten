@@ -23,7 +23,7 @@ eventuella ändringar till datorn (pull). Inlogg finns i
 I:mappen. Kopplad till Bjuvs lånediskmejl, med Bjuvs gmail
 som reserv.
 
-Alla filer ligger på datorn närmast dörren ut till
+Alla filer finns just nu på datorn närmast dörren ut till
 själva biblioteket (Catarinas ände av kontoret).
 Där finns även Visual Studio Code för att redigera koden och
 GitHub Desktop för att publicera koden. Publicerad kod hamnar
@@ -47,16 +47,39 @@ Det går att öppna enstaka filer men jag föreslår att du väljer
 "File->Open folder". Då har du alla filer i ditt projekt
 liggande i listen till vänster så du snabbt kan öppna, stänga
 och kopiera efter behov. Det finns möjlighet att spara under
-"File"-menyn men programmet verkar också spara automatiskt
-efterhand. Du kan kolla hur dina ändringar i koden ser ut genom
-att öppna aktuell fil från utforskaren. Borde räcka att
-dubbelklicka, annars försök "Öppna med" och välj Google Chrome
-eller någon annan webbläsare. Du behöver alltså inte publicera
-ändringarna till github.com innan du kan se dem själv.
+"File"-menyn eller med "Ctrl + S" men när jag suttit verkar allt
+ha sparats efterhand. (När jag visade på Edits dator verkade det
+dock inte spara automatiskt, men då var filen med osparade ändringar
+markerad med en prick eller liknande vid filnamnet. Du kan kolla hur
+dina ändringar i koden ser ut genom att öppna aktuell fil från
+utforskaren. Borde räcka att dubbelklicka, annars försök "Öppna med"
+och välj Google Chrome eller någon annan webbläsare. Du behöver
+alltså inte publicera ändringarna till github.com innan du kan se
+dem själv.
+
+Grön text är kommentarer och "räknas inte" som kod även om den skulle
+innehålla giltig kod. Den syns normalt inte heller på den publicerade
+webbsidan (man se html för i princip vilken hemsida som helst genom
+att högerklicka och välja "inspektera" eller "visa sidkälla", och då
+syns även kommentarer så skriv inget hemligt). Används allmänt till
+att förklara vad varje kodavsnitt gör för att underlätta både för någon
+annan som går in och läser koden och för dig själv när du öppnar
+projektet efter lång tid. Jag har lagt in ganska mycket kommentarer
+eftersom jag tänkt att detta projektet ska användas som en mall när
+du gör egna projekt. Däremot kan jag ha tagit bort stora kommentarer
+om saker som inte är i fokus för att göra det lättare att hitta de
+delar som är relevanta. Exempelvis att förklara hur man skriver själva
+frågorna kanske känns mer relevant för mallarna för hur man gör
+fritextsvar eller färdiga alternativ (som antagligen är de filer du
+kommer att kopiera när du gör nya frågor) än för mallarna som bara
+visar hur man lägger in videor eller länkar.
 
 
 
 **GitHub**
+
+GitHub Desktop går att ladda ner här:
+https://desktop.github.com/
 
 För att skapa ett nytt projekt logga in på github.com och gå till
 din profilsida. Jag har använt Familjen Helsingborgs orangea logga
@@ -89,6 +112,10 @@ uppe till vänster, precis under File). För att publicera en ändring
 behöver du ge ändringen ett namn (obligatoriskt) och en summerande 
 beskrivning (frivilligt) och sedan trycka på "Commit to main" (längst
 ner till vänster). Välj därefter "Push origin". Färdigt.
+
+Om du inte valt något annat när du initierade Desktop hamnar filerna
+i Dokument->Github->Ditt projekt. Du kan också öppna utforskaren
+(explorer) från Desktop, strax under där du tryckte "Push origin".
 
 Notera att det tar ett par minuter efter publicering innan
 ändringarna faktiskt slår igenom. På Githubs hemsida kan 
