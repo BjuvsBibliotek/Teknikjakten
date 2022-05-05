@@ -29,6 +29,11 @@ Du behöver sedan ändra ett saker på varje sida.
   webbsidans flik/tabb har då du du surfar till sidan.
   -->
     <title>Testjakt Bjuvs bibliotek</title>
+
+  <!--Detta är den lilla ikonen på webbsidans flik/tabb. Tyckte vi kunde ha
+  något annat än default jordklot så jag valde Familjen Helsingborgs logga.
+  (Ligger i img-mappen och heter favicon.png, för så kallas tydligen den
+  ikonen). Kan ändra till något roligare om du vill.-->
     <link rel="icon" type="image/x-icon" href="./img/favicon.png">
 
   <!--Filer som berättar hur sidan skall se ut laddas in. Här behöver vi inte ändra något-->
@@ -106,10 +111,14 @@ Du behöver sedan ändra ett saker på varje sida.
 
             <!--
               - <a></a>, definierar en länk
-              - href, talar om vart länken pekar
+              - href, talar om var länken leder oavsett om det är en URL till en hemsida eller en lokal
+              fil i ditt kodprojekt, som när vi byter till nästa fråga.
               - target, default är _self som innebär att länken öppnas i samma fönster som länken är i.
-              Du kan oftast backa tillbaka in i teknikjakten men för oss är _blank som öppnar en ny
-              tom flik antagligen mer praktiskt.
+              _blank som öppnar en ny tom flik istället. Det ena eller andra kan vara mer lämpligt
+              beroende på sammanhang. Vill vi öppna en hemsida där användaren ska leta upp svaret på en
+              fråga kanske den ska öppnas i en ny flik (_blank) så att Teknikjakten ligger kvar. Vill vi
+              kanske ge möjlighet att hoppa över några frågor (som Demokratikollens möjlighet att börja
+              på del 2) är det bättre att öppna i samma fönster.
               - title, lägger till en tooltip, alltså en förklarande text som dyker upp när man för
               musen över länken.
             -->
