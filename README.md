@@ -4,6 +4,12 @@ Testjakt där vi kan experimentera med koden utan att behöva ändra i färdiga proj
 För att starta surfa till:
 bjuvsbibliotek.github.io/testjakt
 
+Umeå biblioteks tutorial för att ladda ner och installera
+de program du behöver. (Avsnittet om hur du använder
+github.com är dock förlegad, sidan ser inte ut som de
+beskriver den längre):
+https://digiteket.se/kurs/bygg-din-egen-teknikjakt/
+
 
 
 **Program och inlogg**
@@ -21,7 +27,9 @@ kodar på flera datorer. Desktop används för att enkelt ladda
 upp ändrade filer till webb-versionen (push) eller ladda hem
 eventuella ändringar till datorn (pull). Inlogg finns i
 I:mappen. Kopplad till Bjuvs lånediskmejl, med Bjuvs gmail
-som reserv.
+som reserv. Första gången du försöker logga in från din dator
+kan du behöva verifiera dig, den koden hamnar då i
+lånediskmejlen.
 
 Alla filer finns just nu på datorn närmast dörren ut till
 själva biblioteket (Catarinas ände av kontoret).
