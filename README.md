@@ -52,7 +52,7 @@ Går att ladda ner här:
 https://code.visualstudio.com/
 
 Det går att öppna enstaka filer men jag föreslår att du väljer
-"File->Open folder". Då har du alla filer i ditt projekt
+File -> Open folder. Då har du alla filer i ditt projekt
 liggande i listen till vänster så du snabbt kan öppna, stänga
 och kopiera efter behov. Det finns möjlighet att spara under
 "File"-menyn eller med "Ctrl + S" men när jag suttit verkar allt
@@ -90,6 +90,13 @@ Sök: Bujv
 Ersätt: Bjuv
 Du kan stega mellan varje förekomst av sökordet med hjälp av pilarna
 och ersätta antingen en åt gången eller allihop på en gång.
+
+Det är fullt möjligt att öppna flera Visual Studio Code samtidigt,
+t. ex. om du vill ha testprojektet med mallarna öppet samtidigt
+som ditt eget projekt, så att du lätt kan kopiera över kod eller
+hela filer. Antingen högerklicka på programikonen i startfältet och
+välj "New window" eller välj File -> New window i den programinstans
+du redan har öppen.
 
 
 **GITHUB**
