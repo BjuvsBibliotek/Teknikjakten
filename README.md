@@ -12,7 +12,7 @@ https://digiteket.se/kurs/bygg-din-egen-teknikjakt/
 
 
 
-**Program och inlogg**
+**PROGRAM OCH INLOGG**
 
 - Visual Studio Code
 Används för att läsa och redigera kod. All grön text
@@ -46,7 +46,7 @@ Den här datorn -> Dokument -> GitHub
 
 
 
-**Visual Studio Code**
+**VISUAL STUDIO CODE**
 
 Går att ladda ner här:
 https://code.visualstudio.com/
@@ -82,12 +82,22 @@ fritextsvar eller färdiga alternativ (som antagligen är de filer du
 kommer att kopiera när du gör nya frågor) än för mallarna som bara
 visar hur man lägger in videor eller länkar.
 
+Det finns en sökfunktion inbyggt i VS Code, likadan som i Word. Använd
+"Ctrl + F" och skriv in ordet du letar efter i rutan som dyker upp
+i övre högra hörnet. Tryck ">" i vänstra kanten av sökrutan för att
+även öppna en "ersätt"-ruta. Exempel:
+Sök: Bujv
+Ersätt: Bjuv
+Du kan stega mellan varje förekomst av sökordet med hjälp av pilarna
+och ersätta antingen en åt gången eller allihop på en gång.
 
 
-**GitHub**
+**GITHUB**
 
 GitHub Desktop går att ladda ner här:
 https://desktop.github.com/
+
+*första gången i ett nytt projekt*
 
 För att skapa ett nytt projekt logga in på github.com och gå till
 din profilsida. Jag har använt Familjen Helsingborgs orangea logga
@@ -112,6 +122,20 @@ att projektet är tomt (readme och license räknas inte) när du klonar,
 annars vill det inte. Det är också viktigt att det inte redan finns
 en repository med samma namn i GitHub Desktop.
 
+Det finns en sak du måste göra en gång per projekt, innan det kan
+bli offentligt synligt. På github.com i ditt nya repository
+(leta efter BjuvsBibliotek/projektnamnet), under Settings (horisontell meny)
+-> Pages (vertikal meny), rubriken Source står det något i stil med
+"GitHub Pages is currently disabled". Det finns en drop-down-meny inställd
+på "None" och bredvid det en knapp som heter "Save".
+- Ändra "None" till "main"
+- Det dyker upp ännu en drop-down inställd på "/(root)". Låt den vara så.
+- Tryck "Save".
+När du gjort detta börjar bjuvsbibliotek.github.io/projektnamnet fungera
+(förutsatt att du har en index.html i projektet). 
+
+*återkommande*
+
 Nu är Desktop-applikationen ihopkopplad med webbsidan och du kan
 publicera alla dina ändring snabbt och enkelt. Desktop känner av alla
 ändringar i den mapp du valt och sammanställer dem i en lista. Du kan
@@ -134,3 +158,20 @@ ruta med "Your site is published" beroende på om de senaste
 ändringarna hunnit aktiveras ännu eller inte. När de aktiverats
 kan du surfa till bjuvsbibliotek.github.io/projektnamnet och testa
 hur det ser ut från användarens synvinkel.
+
+*ta bort*
+
+Om du någon gång behöver ta bort ett helt projekt av en eller annan anledning
+finns det tre ställen att tänka på.
+
+- github.com, gå till det projekt du vill ta bort (BjuvsBibliotek/projektnamn).
+Under Settings -> General, scrolla hela vägen ner till rubriken Danger Zone.
+Välj "Delete this repository" och följ instruktionerna för att bekräfta att
+du verkligen vill radera projektet. 
+
+- GitHub Desktop, tryck på "Current repository" (den skiftar mellan att visa
+ev. ändringar i ditt aktuella projekt och en lista över alla dina projekt).
+I listan, högerklicka på det projekt du vill ta bort och välj "Remove". 
+
+- Utforskaren, default Dokument/GitHub/projektnamn eller där du själv valt att
+lägga filerna. Ta bort mappen och/eller filerna precis som vanligt. 
