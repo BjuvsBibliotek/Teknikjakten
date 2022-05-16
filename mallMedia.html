@@ -101,17 +101,54 @@ Du behöver sedan ändra ett saker på varje sida.
             <br/>
             <br/>
 
+            <!--BILD FRÅN FIL-->
+            <!--Rekommenderar att ha bilden som fil istället för att länka till någon adress på internet som
+            du inte själv har kontroll över. Helt plötsligt kan bilden vara flyttad, utbytt mot något annat eller helt
+            försvunnen.
+
+            Hela koden är egentligen en enda rad, men jag har delat upp den på flera rader för läsbarhetens
+            skull. Om du vill dela upp rader, bryt inte raden mitt i orange text (innanför ett par citattecken som hör ihop),
+            utan börja en ny rad med ljusblå text (attribut som width, height, alt).
+
+              - src vill ha filsökvägen, som bör bli "./img/bildensNamn.filformat" så länge alla bilder som
+              ska användas läggs i img-mappen. Vanliga filformat som stöds är:
+                - jpg, jpeg
+                - png
+                - gif
+                - bmp
+                - svg
+              - alt vill ha en textbeskrivning av bilden, som kan visas om bilden av någon anledning inte kan 
+              laddas in, eller som kan läsas upp av screen reader-program för de som ser dåligt.
+              - width och height kan anges i ett flertal enheter. Procent (%) och pixlar (px) kan räcka för oss
+              att veta om. Antagligen behöver det inte ändras. Det ska finnas kod på andra ställen som anpassar
+              text och bild till skärmstorleken på den enhet som används så att det ser okej ut oavsett om du
+              använder dator, surfplatta eller mobil.-->
+            <img src="./img/knubbDjur.jpg"
+            alt="Bild på knubb som brukar stå mellan böckerna i en hylla för att markera en ny bokstav eller ett nytt ämne"
+            width="60%" height="60%"/>
+
+            <br/> <br/>
+
             <!--VIDEO FRÅN YOUTUBE-->
             <!--Om du går till den youtube-video du vill ha och klickar på "Dela" (nära Gilla-knappen) och sen
             alternativet "Bädda in" så får du hela den här koden så att du bara kan kopiera och klistra in.
-            Där finns också möjlighet att välja var i videon du vill börja uppspelningen.-->
+            Där finns också möjlighet att välja var i videon du vill börja uppspelningen.
+          
+            Hela koden är egentligen en enda rad, men jag har delat upp den på flera rader för läsbarhetens
+            skull. Om du vill dela upp rader, bryt inte raden mitt i orange text (innanför ett par citattecken som hör ihop),
+            utan börja en ny rad med ljusblå text (attribut som width, height, alt).-->
+
             <iframe width="560" height="315" src="https://www.youtube.com/embed/AhR8Lr4UvQw"
             title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
 
+            <br/>
+
             <!--VIDEO FRÅN FIL-->
-            <!--
+            <!--OBS att GitHub tydligen inte tycker om filer som är större än 100 mB, så rekommenderar
+            youtube-versionen. 
+
             - width och height, rekommenderas man sätter för att förhindra att det flimrar medan videon
             laddas. Jag märkte också när jag testade utan att videon blev jättestor och fortsatte utanför
             skärmen.
@@ -123,15 +160,45 @@ Du behöver sedan ändra ett saker på varje sida.
             flera alternativa <source>-taggar, t ex med olika filformat. Den första i listan som fungerar blir
             den som laddas in.
             - type, mest en optimiseringsgrej. Det är god sed att ta med, men liten praktisk skillnad på
-            våra enkla sidor.
-            - den vita texten dyker endast upp om webbläsaren av någon anledning inte stöder <video>-taggen
-              
-            GitHub tycker tydligen inte om filer som är större än 100 mB, så rekommenderar att gå via youtube.-->
+            våra enkla sidor. Finns tre format som stöds av HTML-språket. Av de tre är mp4 den med bredast stöd
+            över webbläsare och versioner.
+              - video/mp4
+              - video/webm
+              - video/ogg
+            - den vita texten dyker endast upp om webbläsaren av någon anledning inte stöder <video>-taggen-->
             
             <video width="560" height="315" controls>
               <source src="./img/kattvideo.mp4" type="video/mp4">
               Din webbläsare stöder inte uppspelning av kattvideor :(
             </video>
+
+            <br/>
+
+            <!--AUDIO FRÅN FIL-->
+            <!--
+            - controls, lägger till vanliga ljudkontroller (play, volym osv.).
+            - autoplay och muted, startar ljudfilen automatiskt när sidan laddas respektive stänger av ljudet
+            som default. Alla webbläsare tillåter inte autoplay om ljudfilen inte är muted eftersom funktionen
+            mest är irriterande i nästan alla sammanhang.
+            - source, berättar var ljudfilen finns, samma princip som att lägga in en bild. Det går att lägga in
+            flera alternativa <source>-taggar, t ex med olika filformat. Den första i listan som fungerar blir
+            den som laddas in.
+            - type, mest en optimiseringsgrej. Det är god sed att ta med, men liten praktisk skillnad på
+            våra enkla sidor. Finns tre format som stöds av HTML-språket. Av de tre är mp3 den med bredast stöd
+            över webbläsare och versioner.
+              - audio/mpeg (mp3)
+              - audio/wav
+              - audio/ogg
+            - den vita texten dyker endast upp om webbläsaren av någon anledning inte stöder <audio>-taggen
+            -->
+
+            <audio controls>
+              <source src="./img/quoniam.mp3" type="audio/mpeg">
+              <source src="./img/cumSancto.mp3" type="audio/mpeg">
+              Din webbläsare stöder inte uppspelning av körmusik :(
+            </audio>
+
+            <br/>
 
             </p>
           </div>
