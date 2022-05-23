@@ -10,6 +10,13 @@ github.com är dock förlegad, sidan ser inte ut som de
 beskriver den längre):
 https://digiteket.se/kurs/bygg-din-egen-teknikjakt/
 
+Google är din bästa vän när du har en specifik fråga du
+fastnat på. Vill du få överblick över vad som är möjligt
+rekommenderar jag:
+w3schools.com
+De har tutorials, exempel och övningar till HTML, CSS,
+javascript (de 3 språk vi använder i våra projekt) och
+mycket mer.
 
 
 **PROGRAM OCH INLOGG**
@@ -22,13 +29,13 @@ handlar om och är då till hjälp för att hitta i koden.
 
 - GitHub Desktop, github.com
 Github är ett verktyg för att publicera, lagra och slå ihop
-kodfiler. Användbart när flera kodar i samma filer eller man
-kodar på flera datorer. Desktop används för att enkelt ladda
-upp ändrade filer till webb-versionen (push) eller ladda hem
-eventuella ändringar till datorn (pull). Inlogg finns i
-I:mappen. Kopplad till Bjuvs lånediskmejl, med Bjuvs gmail
-som reserv. Första gången du försöker logga in från din dator
-kan du behöva verifiera dig, den koden hamnar då i
+olika versioner av samma kodfil. Användbart när flera kodar
+i samma fil eller man kodar på flera datorer. Desktop används
+för att enkelt ladda upp ändrade filer till webb-versionen (push)
+eller ladda hem eventuella ändringar till datorn (pull).
+Inlogg finns i I:mappen. Kopplad till Bjuvs lånediskmejl, med
+Bjuvs gmail som reserv. Första gången du försöker logga in från
+din dator kan du behöva verifiera dig, den koden hamnar då i
 lånediskmejlen.
 
 Alla filer finns just nu på datorn närmast dörren ut till
@@ -131,10 +138,11 @@ en repository med samma namn i GitHub Desktop.
 
 Det finns en sak du måste göra en gång per projekt, innan det kan
 bli offentligt synligt. På github.com i ditt nya repository
-(leta efter BjuvsBibliotek/projektnamnet), under Settings (horisontell meny)
--> Pages (vertikal meny), rubriken Source står det något i stil med
-"GitHub Pages is currently disabled". Det finns en drop-down-meny inställd
-på "None" och bredvid det en knapp som heter "Save".
+(leta efter BjuvsBibliotek/projektnamnet), under 
+Settings (horisontell meny) -> Pages (vertikal meny), rubriken Source
+står det något i stil med "GitHub Pages is currently disabled".
+Det finns en drop-down-meny inställd på "None" och bredvid det en knapp
+som heter "Save".
 - Ändra "None" till "main"
 - Det dyker upp ännu en drop-down inställd på "/(root)". Låt den vara så.
 - Tryck "Save".
