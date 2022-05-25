@@ -87,7 +87,14 @@ delar som är relevanta. Exempelvis att förklara hur man skriver själva
 frågorna kanske känns mer relevant för mallarna för hur man gör
 fritextsvar eller färdiga alternativ (som antagligen är de filer du
 kommer att kopiera när du gör nya frågor) än för mallarna som bara
-visar hur man lägger in videor eller länkar.
+visar hur man lägger in videor eller länkar. Vi använder flera olika
+språk och de har inte nödvändigtvis samma sätt att skriva kommentarer,
+så om ett sätt inte funkar prova ett annat eller markera texten du vill
+kommentera bort och använd "Toggle block comment" från Edit-menyn. Du
+kan använda samma för att "avkommentera" också.
+<!-- Kommentar som kan täcka en eller flera rader -->
+/* Kommentar som kan täcka en eller flera rader */
+// Kommentar på en rad, inget sluttecken
 
 Det finns en sökfunktion inbyggt i VS Code, likadan som i Word. Använd
 "Ctrl + F" och skriv in ordet du letar efter i rutan som dyker upp
@@ -132,9 +139,7 @@ projekt så ligger texten i en kommentar längst upp.
 - Välj "File->Clone repository...". Du bör få upp en lista över alla
 dina repositories från github.com. Välj den du precis skapade, var
 du vill spara den på din dator och tryck sedan "Clone". Det är viktigt
-att projektet är tomt (readme och license räknas inte) när du klonar,
-annars vill det inte. Det är också viktigt att det inte redan finns
-en repository med samma namn i GitHub Desktop.
+att det inte redan finns en repository med samma namn i GitHub Desktop.
 
 Det finns en sak du måste göra en gång per projekt, innan det kan
 bli offentligt synligt. På github.com i ditt nya repository
