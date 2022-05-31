@@ -177,7 +177,10 @@ med texten "Your site is ready to be published" eller en grön
 ruta med "Your site is published" beroende på om de senaste
 ändringarna hunnit aktiveras ännu eller inte. När de aktiverats
 kan du surfa till bjuvsbibliotek.github.io/projektnamnet och testa
-hur det ser ut från användarens synvinkel.
+hur det ser ut från användarens synvinkel. Om du testar hur det ser
+ut på telefon eller surfplatta kan du behöva rensa webbhistoriken så du
+blir av med eventuella cachade versioner av sidan innan du kan se dina
+ändringar.
 
 *ta bort*
 

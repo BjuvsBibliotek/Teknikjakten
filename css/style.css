@@ -20,9 +20,13 @@ header.masthead {
     background-image: url("../img/background.jpg");
 }
 
-.textbox {
+.textbox{
 	background-color:rgba(0, 0, 0, 0.8);
 	border:2px solid black;
 	padding:10px;
 }
 
+.question{
+	color:#fec503;
+	text-decoration:underline;
+}
